@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_ghm"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/logo_ghm2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_namautama"
+            android:text="nama" />
+    </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="5"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:columnCount="1" >
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="360dp"
+                    android:layout_height="120dp"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/btn1"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/tx_atendz"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/btn2"
+                        android:id="@+id/tx_earlyz"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/btn3"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/tx_setz" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Attendance Log"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Early - Late Finger"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Setting"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/btn4"
+                        android:id="@+id/tx_signofz"
+                        android:textColor="#FFFFFF" />
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/btn5"
+                        android:id="@+id/tx_helpz"
+                        android:textColor="#FFFFFF" />
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/btn6"
+                        android:id="@+id/tx_aboutz"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Sign Off"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="Asking &amp; Help"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:text="About App"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/adview_"
+        ads:adSize = "BANNER"
+        ads:adUnitId = "@string/id_iklanyaaa" />
+</LinearLayout>
